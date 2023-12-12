@@ -6,14 +6,24 @@
         public static void Main(String[] args)
         {
             char[] VocalesUno = { 'a', 'e', 'i', 'o', 'u' };
+            
+            
             char[] VocalesDos = { 'a', 'e', 'i', 'o', 'x' };
 
-            for (int recorrido = 0; recorrido < 5; recorrido++)
+            for (int i = 0; i < 1; i++)
             {
-                if (VocalesUno[recorrido] != VocalesDos[recorrido])
+                
+                for (int j = 0; j < 5; j++)
                 {
-                    Console.WriteLine("En la posicion: " + recorrido + " del segundo array esta mal");
+                    
+                    if (VocalesUno[j] != VocalesDos[j])
+                    {
+                       
+                        Console.WriteLine(" El fallo se encuentra en la fila: " + i+ " / columna: " + j);
+                    }
+
                 }
+
             }
         }
     }
